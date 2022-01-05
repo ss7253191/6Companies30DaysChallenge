@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define fast ios_base :: sync_with_stdio(0);    cin.tie(0);     cout.tie(0);
+#define ll long long int
+#define pb push_back
+#define mp make_pair
+#define mod 1000000007
+
+int main() {
+	int num[]={10,23,45,12,6,90,200,11,85,123,34,1000,456,543,5};
+	priority_queue<int> q;
+	for(int i=0;i<15;i++){
+	     q.push(num[i]);
+	}
+	for(int i=0;i<10;i++){
+	     cout<<q.top()<<" ";
+	     q.pop();
+	}
+	return 0;
+}
